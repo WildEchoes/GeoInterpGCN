@@ -1,0 +1,14 @@
+# no data
+data/
+
+# vscode
+.vscode/
+
+# pycharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# 忽略所有子目录中的 __pycache__ 目录
+**/__pycache__/

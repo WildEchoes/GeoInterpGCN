@@ -55,7 +55,7 @@ class GCNPredictor(torch.nn.Module):
 
 # 定义模型参数
 input_dim = 2  # 经度, 纬度
-hidden_dim = 16
+hidden_dim = 8
 output_dim = 1
 
 model = GCNPredictor(input_dim, hidden_dim, output_dim)
@@ -68,7 +68,7 @@ train_mask = torch.ones(1, dtype=torch.bool)  # 只训练点A的目标值
 
 # 训练模型
 model.train()
-for epoch in range(100):
+for epoch in range(200):
     optimizer.zero_grad()
     out = model(data)
     loss = criterion(out[train_mask], data.y[train_mask])

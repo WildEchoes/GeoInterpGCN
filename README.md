@@ -12,4 +12,15 @@ conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0  pytorch-cuda
 conda install pyg -c pyg
 # recommend for Windows
 pip install torch_geometric
+# install scipy
+pip install scipy
+# install scikit-learn
+pip install scikit-learn
+```
+
+# Train
+```shell
+conda activate gcn
+
+python src/train.py
 ```
